@@ -22,4 +22,11 @@ las de todos. Ese es tu primer PR.
 > Cada quien crea SU propio archivo en `propiedades/`, así nadie se pisa con nadie. No edites
 > las tarjetas de los demás.
 
+## ¿Ya terminaste? Sigue practicando
+
+Cuando tengas tu primera tarjeta, hay una escalera de **proyectos de práctica** (una página
+de resultados, la ficha de una propiedad, un perfil de agente, favoritos y filtros con
+JavaScript, cambio de moneda USD/Bs). Están en [`PROYECTOS.md`](./PROYECTOS.md). Todo en el
+sandbox, todo con la marca de Propiedash, cada uno un escalón más.
+
 Nada de esto afecta propiedash.com. Equivócate con confianza: de eso se trata.
