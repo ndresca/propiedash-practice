@@ -1,84 +1,97 @@
 # Proyectos de práctica (para seguir después del onboarding)
 
 Ya terminaste el recorrido y tu primera tarjeta. Estos proyectos son para **seguir
-practicando** sin tocar producción: todo es en el sandbox, no se puede romper nada.
+practicando** el stack real de Propiedash, sin tocar producción. Se hacen con **tus propias
+cuentas gratis** de cada herramienta (no las de la empresa): así aprendes las herramientas
+de verdad sin ningún riesgo. En la graduación, solo cambias tus cuentas por las reales de
+Propiedash.
 
-Cada uno es un escalón más que el anterior, y todos son cosas que Propiedash de verdad tiene
-(así, mientras practicas, vas conociendo el producto). Van de HTML simple a un poco de
-JavaScript. **Tu guía los construye contigo y te explica cada parte**: tú aprendes viendo y
-entendiendo, no memorizando.
+Cada proyecto es un escalón más, y todos son cosas que Propiedash de verdad tiene. **Tu guía
+los construye contigo y te explica cada parte:** tú aprendes viendo y entendiendo. Cuando
+algo necesite crear una cuenta, tu guía te abre la página; tú solo escribes tus datos.
 
-Cómo trabajarlos:
-- Haz cada proyecto en tu propia carpeta: `proyectos/tu-nombre/`. Cada quien la suya, así
-  nadie se pisa con nadie.
-- Cada proyecto es un PR: rama → construir con tu guía → verlo → PR.
-- Ve en orden. Sube un escalón cuando el anterior te salga cómodo.
-- Punto de partida siempre a mano: `ejemplo/tarjeta-ejemplo.html`.
-
-### Tus proyectos quedan EN VIVO en la web
-Este repo publica en internet con **GitHub Pages**. O sea:
-- Mientras construyes, tu guía te muestra el archivo para ir viendo los cambios rápido.
-- Cuando tu **PR se fusiona a `main`**, tu proyecto queda **publicado en una URL real**, por
-  ejemplo: `https://ndresca.github.io/propiedash-practice/proyectos/juan/resultados.html`
-- Eso se llama un **deploy**: publicar tu cambio en la web. Es EXACTAMENTE lo que hace
-  propiedash.com cuando fusionamos un cambio a `main` (ahí lo publica Vercel; aquí, Pages).
-
-La portada del sitio de práctica está en `https://ndresca.github.io/propiedash-practice/`.
-Cuando termines un proyecto y se fusione, abre tu URL y compártela: está en vivo de verdad.
+Van en dos fases: primero el frontend (lo visible), luego el stack completo (base de datos,
+deploy, correos).
 
 ---
 
-## 1. Tu tarjeta de propiedad  ·  (ya la hiciste)
-Una tarjeta de una propiedad inventada, con la marca de Propiedash. Base de todo lo demás.
+## Fase 1 — Frontend (lo visible)
 
-## 2. Página de resultados (mini "buscar")
-**Objetivo:** una página con **6 tarjetas** de propiedades en una cuadrícula, como la página
-de búsqueda de Propiedash.
-**Qué aprendes:** reutilizar un mismo componente muchas veces, y acomodar cosas en una
-cuadrícula (CSS grid) que se vea bien en pantalla grande y en teléfono.
-**Pistas:** parte de tu tarjeta; repítela 6 veces con datos distintos; ponlas en una grid.
-**Hecho cuando:** ves 6 tarjetas ordenadas en el navegador, y en pantalla angosta se
-reacomodan solas.
+Todo en HTML/CSS/JS, en este mismo repo (`propiedash-practice`), y se publica en la web con
+GitHub Pages. Cada proyecto es un PR en tu carpeta `proyectos/tu-nombre/`. Cuando se fusiona
+a `main`, queda **en vivo** en `https://ndresca.github.io/propiedash-practice/...` (eso es un
+**deploy**, publicar en la web, como propiedash.com).
 
-## 3. Ficha de propiedad (la página de una propiedad)
-**Objetivo:** la página completa de UNA propiedad: foto grande, precio, título, ubicación,
-specs (hab/baños/m²), una descripción, el agente, y un bloque de "ubicación".
-**Qué aprendes:** armar una página con varias secciones y una jerarquía visual clara (lo
-importante grande, lo secundario chico).
-**Pistas:** piensa en secciones apiladas; usa los colores de la marca; el botón "Contactar"
-en lima.
-**Hecho cuando:** la página se siente como la ficha real de un inmueble y se lee de arriba
-a abajo con sentido.
-
-## 4. Perfil de agente (un Dashtag)
-**Objetivo:** la página pública de un agente: su nombre, su `@dashtag`, una bio corta, y
-abajo sus propiedades (reusa las tarjetas del proyecto 2).
-**Qué aprendes:** combinar un encabezado (la persona) con una lista (sus propiedades); el
-concepto de perfil/directorio de Propiedash.
-**Hecho cuando:** se ve como el perfil de un agente con su inventario debajo.
-
-## 5. Interactividad: favoritos y filtro (primer JavaScript)
-**Objetivo:** en tu página de resultados, agrega dos cosas con un poquito de JavaScript:
-(a) un corazón en cada tarjeta que se marca/desmarca al hacer clic (favorito), y (b) un
-filtro para mostrar solo "Venta" o solo "Alquiler".
-**Qué aprendes:** tu primer JavaScript, reaccionar a clics y cambiar la página en vivo. Son
-funciones REALES de Propiedash (favoritos, filtros).
-**Hecho cuando:** puedes marcar favoritos y filtrar, y la página responde al instante.
-
-## 6. Cambio de moneda USD ↔ Bs (la tasa BCV)
-**Objetivo:** un botón que cambia todos los precios entre dólares y bolívares, usando una
-tasa BCV que pones tú (ej. 36,5).
-**Qué aprendes:** más JavaScript (recorrer elementos, formatear números) y el concepto más
-propio de Propiedash: precios en USD con su equivalente en Bs a la tasa BCV.
-**Hecho cuando:** un clic convierte todos los precios y se ven bien formateados.
+1. **Tu tarjeta de propiedad** (ya la hiciste). Una tarjeta con la marca de Propiedash.
+2. **Página de resultados.** 6 tarjetas en cuadrícula, como `/buscar`. Aprendes: reutilizar
+   un componente y acomodar en grid responsivo.
+3. **Ficha de propiedad.** La página completa de UNA propiedad (foto, specs, descripción,
+   agente, ubicación). Aprendes: estructura de página y jerarquía visual.
+4. **Perfil de agente (un Dashtag).** Encabezado del agente + sus propiedades debajo.
+5. **Favoritos y filtro (tu primer JavaScript).** Un corazón para marcar favoritos y un
+   filtro Venta/Alquiler. Aprendes: reaccionar a clics y cambiar la página en vivo.
+6. **Cambio de moneda USD ↔ Bs (tasa BCV).** Un botón que convierte todos los precios.
 
 ---
 
-### Estírate (opcional, si quieres más)
-- Una mini **landing** de Propiedash: un hero con el eslogan "Donde Venezuela compra, vende
-  y alquila", un buscador falso, y una fila de tarjetas debajo.
-- Modo **claro/oscuro** con un botón (como la guía visual del onboarding).
+## Fase 2 — El stack de verdad (con TUS cuentas gratis)
 
-Cuando estos te salgan cómodos, ya no estás practicando de mentira: estás listo para tareas
-reales pequeñas en el sitio de verdad (eso lo coordina Andrés). Cada tarea real es una
-versión más grande de este mismo loop.
+Aquí armas un **mini-Propiedash** con las mismas herramientas que usamos: Next.js, Vercel,
+Supabase, Resend. Todo en **tu propio repo** (crea uno nuevo, ej. `mi-propiedash`) y con
+**tus cuentas gratis**. Nada de esto toca Propiedash real.
+
+Tu guía te instala lo que falte (Node, etc.) y te abre las páginas para crear cada cuenta.
+
+7. **Next.js: tu app de verdad.**
+   - Con tu guía, crea una app con `create-next-app` (el framework de Propiedash) y pásate
+     de HTML estático a Next.js. Corre `npm run dev` y ve tu página de resultados, ahora en
+     una app real, en `localhost:3000`.
+   - Aprendes: qué es un framework, páginas y componentes, correr un servidor de desarrollo.
+
+8. **Vercel: deploy real.**
+   - Crea tu cuenta gratis de **Vercel** (con tu GitHub). Sube tu app a un repo nuevo tuyo y
+     conéctalo a Vercel. Cada `push` se publica solo, en una URL real.
+   - Aprendes: deploy de verdad, el mismo que usa propiedash.com. (Vercel > GitHub Pages para
+     apps: aquí ya es "lo real".)
+
+9. **Supabase: la base de datos.**
+   - Crea tu proyecto gratis de **Supabase**. Haz una tabla `propiedades` con unas columnas
+     (título, precio, zona, habitaciones...). Mete 3–4 filas a mano.
+   - Haz que tu app **lea las propiedades desde la base** (no escritas a mano en el código).
+   - Aprendes: qué es una tabla y una consulta, y por qué existen los clientes de Supabase y
+     el RLS (que controla quién ve qué). Es el corazón del backend de Propiedash.
+
+10. **Supabase Auth: login.**
+    - Agrega **iniciar sesión** a tu mini-app (correo o Google). Que solo un usuario con
+      sesión pueda ver cierta página.
+    - Aprendes: autenticación, sesiones, y por qué el cliente correcto de Supabase importa.
+
+11. **Resend: correos de verdad.**
+    - Crea tu cuenta gratis de **Resend** y consigue una API key. Cuando alguien "contacta"
+      una propiedad en tu app, **envía un correo** con Resend.
+    - Aprendes: correo transaccional, exactamente lo que usa Propiedash para sus notificaciones.
+    - Ojo de seguridad: la API key va en variables de entorno (`.env.local`), NUNCA en el
+      código ni en el repo. (Lo mismo aplica a todas las llaves.)
+
+12. **Formularios (react-hook-form + zod).**
+    - Un formulario de "publicar propiedad" que **valida** los datos antes de guardarlos en
+      tu tabla de Supabase (precio numérico, título obligatorio, etc.).
+    - Aprendes: formularios y validación como los hace Propiedash.
+
+### Estírate (opcional)
+- Sube fotos de la propiedad a **Supabase Storage**.
+- Un mapa con la ubicación (como el `/buscar` de Propiedash).
+- Modo claro/oscuro.
+
+---
+
+## Cierre
+
+Cuando termines la Fase 2 ya construiste un **mini-Propiedash sobre el stack real**
+(Next.js + Supabase + Vercel + Resend), tocando cada pieza con tus propias manos, sin haber
+tocado producción ni una vez. En ese punto entiendes de verdad cómo funciona todo.
+
+La graduación es simple: cambias tus cuentas de práctica por las **reales de Propiedash**
+(la organización de GitHub, la Supabase de desarrollo, el Vercel del equipo, la key de
+Resend), que te da Andrés. El primer PR real (agregar una pregunta al FAQ) va a sentirse
+fácil, porque ya hiciste algo más grande tú solo.
