@@ -11,9 +11,20 @@ entendiendo, no memorizando.
 Cómo trabajarlos:
 - Haz cada proyecto en tu propia carpeta: `proyectos/tu-nombre/`. Cada quien la suya, así
   nadie se pisa con nadie.
-- Cada proyecto es un PR: rama → construir con tu guía → verlo en el navegador → PR.
+- Cada proyecto es un PR: rama → construir con tu guía → verlo → PR.
 - Ve en orden. Sube un escalón cuando el anterior te salga cómodo.
 - Punto de partida siempre a mano: `ejemplo/tarjeta-ejemplo.html`.
+
+### Tus proyectos quedan EN VIVO en la web
+Este repo publica en internet con **GitHub Pages**. O sea:
+- Mientras construyes, tu guía te muestra el archivo para ir viendo los cambios rápido.
+- Cuando tu **PR se fusiona a `main`**, tu proyecto queda **publicado en una URL real**, por
+  ejemplo: `https://ndresca.github.io/propiedash-practice/proyectos/juan/resultados.html`
+- Eso se llama un **deploy**: publicar tu cambio en la web. Es EXACTAMENTE lo que hace
+  propiedash.com cuando fusionamos un cambio a `main` (ahí lo publica Vercel; aquí, Pages).
+
+La portada del sitio de práctica está en `https://ndresca.github.io/propiedash-practice/`.
+Cuando termines un proyecto y se fusione, abre tu URL y compártela: está en vivo de verdad.
 
 ---
 

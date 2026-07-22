@@ -22,6 +22,12 @@ las de todos. Ese es tu primer PR.
 > Cada quien crea SU propio archivo en `propiedades/`, así nadie se pisa con nadie. No edites
 > las tarjetas de los demás.
 
+## Está en vivo en la web
+
+Este repo se publica solo en internet (GitHub Pages). Portada:
+**https://ndresca.github.io/propiedash-practice/**. Cuando tu PR se fusiona a `main`, tu
+trabajo queda en vivo en una URL real, un **deploy**, igual que propiedash.com.
+
 ## ¿Ya terminaste? Sigue practicando
 
 Cuando tengas tu primera tarjeta, hay una escalera de **proyectos de práctica** (una página
