@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Resultados de búsqueda · Propiedash</title>
+<style>
+  /* Marca Propiedash: lima #C7FF02 como acento, neutros cálidos, sin gradientes. */
+  :root {
+    --bg: #F7F7F5;
+    --card: #FFFFFF;
+    --border: #E8E8E3;
+    --ink: #0A0A0A;
+    --muted: #525249;
+    --dim: #8A8A7F;
+    --accent: #C7FF02;
+    --on-accent: #0A0A0A;
+    --font: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    --mono: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; min-height: 100vh;
+    background: var(--bg); color: var(--ink); font-family: var(--font);
+  }
+  .page { max-width: 1200px; margin: 0 auto; padding: 32px 24px 56px; }
+  .page-title { font-size: 22px; font-weight: 800; margin: 0 0 4px; }
+  .page-sub { font-size: 14px; color: var(--muted); margin: 0 0 24px; }
+
+  /* La cuadrícula: columnas que se ajustan solas según el espacio disponible. */
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+  @media (max-width: 900px) {
+    .grid { grid-template-columns: repeat(2, 1fr); }
+  }
+  @media (max-width: 600px) {
+    .grid { grid-template-columns: 1fr; }
+  }
+
+  .card {
+    background: var(--card); border: 1px solid var(--border);
+    border-radius: 12px; overflow: hidden;
+  }
+  .photo {
+    height: 160px; background: #EFEFE9; display: grid; place-items: center;
+    border-bottom: 1px solid var(--border); position: relative;
+  }
+  .photo svg { width: 46px; height: 46px; color: var(--dim); }
+  .tag {
+    position: absolute; top: 12px; left: 12px; background: var(--accent);
+    color: var(--on-accent); font-size: 12px; font-weight: 700; padding: 4px 10px;
+    border-radius: 9999px;
+  }
+  .body { padding: 16px 18px 18px; }
+  .price { font-size: 20px; font-weight: 800; letter-spacing: -0.02em; }
+  .price small { font-size: 12px; font-weight: 600; color: var(--muted); }
+  .title { font-size: 15px; font-weight: 700; margin: 6px 0 2px; }
+  .loc { font-size: 13px; color: var(--muted); }
+  .specs {
+    display: flex; gap: 12px; margin: 12px 0; padding: 10px 0;
+    border-top: 1px solid var(--border); border-bottom: 1px solid var(--border);
+    font-size: 12px; color: var(--ink);
+  }
+  .specs b { font-weight: 700; }
+  .meta { display: flex; justify-content: space-between; align-items: center; margin-top: 12px; }
+  .dashcode { font-family: var(--mono); font-size: 11px; color: var(--dim); }
+  .agent { font-size: 12px; color: var(--muted); }
+  .agent b { color: var(--ink); }
+  .cta {
+    display: block; width: 100%; margin-top: 12px; padding: 10px; text-align: center;
+    background: var(--accent); color: var(--on-accent); border: none; border-radius: 8px;
+    font-family: var(--font); font-size: 13px; font-weight: 700; cursor: pointer;
+  }
+</style>
+</head>
+<body>
+  <div class="page">
+    <h1 class="page-title">Propiedades en Caracas</h1>
+    <p class="page-sub">6 resultados</p>
+
+    <div class="grid">
+      <!-- Cada .card de aquí abajo es la misma tarjeta de ejemplo/tarjeta-ejemplo.html, repetida con datos distintos. -->
+      <article class="card">
+        <div class="photo">
+          <span class="tag">En venta</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 10.5 12 4l9 6.5"/><path d="M5 9.5V20h14V9.5"/><path d="M9 20v-6h6v6"/></svg>
+        </div>
+        <div class="body">
+          <div class="price">$120.000 <small>· Bs. a la tasa BCV</small></div>
+          <div class="title">Apartamento en Los Palos Grandes</div>
+          <div class="loc">Caracas · Los Palos Grandes</div>
+          <div class="specs">
+            <span><b>3</b> hab</span>
+            <span><b>2</b> baños</span>
+            <span><b>120</b> m²</span>
+          </div>
+          <div class="meta">
+            <span class="dashcode">DPG-4821</span>
+            <span class="agent">Agente <b>@mariainmuebles</b></span>
+          </div>
+          <button class="cta">Contactar</button>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="photo">
+          <span class="tag">En alquiler</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 10.5 12 4l9 6.5"/><path d="M5 9.5V20h14V9.5"/><path d="M9 20v-6h6v6"/></svg>
+        </div>
+        <div class="body">
+          <div class="price">$650 <small>/ mes</small></div>
+          <div class="title">Apartamento en Las Mercedes</div>
+          <div class="loc">Caracas · Las Mercedes</div>
+          <div class="specs">
+            <span><b>2</b> hab</span>
+            <span><b>1</b> baño</span>
+            <span><b>78</b> m²</span>
+          </div>
+          <div class="meta">
+            <span class="dashcode">LMR-1092</span>
+            <span class="agent">Agente <b>@carlosinmuebles</b></span>
+          </div>
+          <button class="cta">Contactar</button>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="photo">
+          <span class="tag">En venta</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 10.5 12 4l9 6.5"/><path d="M5 9.5V20h14V9.5"/><path d="M9 20v-6h6v6"/></svg>
+        </div>
+        <div class="body">
+          <div class="price">$210.000 <small>· Bs. a la tasa BCV</small></div>
+          <div class="title">Casa en La Lagunita</div>
+          <div class="loc">Caracas · La Lagunita</div>
+          <div class="specs">
+            <span><b>4</b> hab</span>
+            <span><b>3</b> baños</span>
+            <span><b>240</b> m²</span>
+          </div>
+          <div class="meta">
+            <span class="dashcode">LLG-3305</span>
+            <span class="agent">Agente <b>@mariainmuebles</b></span>
+          </div>
+          <button class="cta">Contactar</button>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="photo">
+          <span class="tag">Corto plazo</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 10.5 12 4l9 6.5"/><path d="M5 9.5V20h14V9.5"/><path d="M9 20v-6h6v6"/></svg>
+        </div>
+        <div class="body">
+          <div class="price">$65 <small>/ noche</small></div>
+          <div class="title">Estudio en Chacao</div>
+          <div class="loc">Caracas · Chacao</div>
+          <div class="specs">
+            <span><b>1</b> hab</span>
+            <span><b>1</b> baño</span>
+            <span><b>45</b> m²</span>
+          </div>
+          <div class="meta">
+            <span class="dashcode">CHC-7710</span>
+            <span class="agent">Agente <b>@juanvcasanova</b></span>
+          </div>
+          <button class="cta">Contactar</button>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="photo">
+          <span class="tag">En alquiler</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 10.5 12 4l9 6.5"/><path d="M5 9.5V20h14V9.5"/><path d="M9 20v-6h6v6"/></svg>
+        </div>
+        <div class="body">
+          <div class="price">$900 <small>/ mes</small></div>
+          <div class="title">Apartamento en El Rosal</div>
+          <div class="loc">Caracas · El Rosal</div>
+          <div class="specs">
+            <span><b>3</b> hab</span>
+            <span><b>2</b> baños</span>
+            <span><b>105</b> m²</span>
+          </div>
+          <div class="meta">
+            <span class="dashcode">ROS-2244</span>
+            <span class="agent">Agente <b>@carlosinmuebles</b></span>
+          </div>
+          <button class="cta">Contactar</button>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="photo">
+          <span class="tag">En venta</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 10.5 12 4l9 6.5"/><path d="M5 9.5V20h14V9.5"/><path d="M9 20v-6h6v6"/></svg>
+        </div>
+        <div class="body">
+          <div class="price">$95.000 <small>· Bs. a la tasa BCV</small></div>
+          <div class="title">Apartamento en San Bernardino</div>
+          <div class="loc">Caracas · San Bernardino</div>
+          <div class="specs">
+            <span><b>2</b> hab</span>
+            <span><b>2</b> baños</span>
+            <span><b>90</b> m²</span>
+          </div>
+          <div class="meta">
+            <span class="dashcode">SBR-5567</span>
+            <span class="agent">Agente <b>@mariainmuebles</b></span>
+          </div>
+          <button class="cta">Contactar</button>
+        </div>
+      </article>
+    </div>
+  </div>
+</body>
+</html>
