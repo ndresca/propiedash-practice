@@ -10,14 +10,17 @@ Cada proyecto es un escalón más, y todos son cosas que Propiedash de verdad ti
 los construye contigo y te explica cada parte:** tú aprendes viendo y entendiendo. Cuando
 algo necesite crear una cuenta, tu guía te abre la página; tú solo escribes tus datos.
 
-Van en dos fases: primero el frontend (lo visible), luego el stack completo (base de datos,
-deploy, correos).
+Van en dos fases, y **lo importante es la Fase 2** (el stack real: Next.js, Vercel, Supabase,
+Resend). La Fase 1 (frontend) es solo un **calentamiento corto** para agarrarle la mano al
+flujo de git y deploy: haz 1 o 2 proyectos y pásate rápido a la Fase 2. Todo el que pasa por
+aquí tiene que entender la Fase 2, ahí está el stack de verdad de Propiedash.
 
 ---
 
-## Fase 1 — Frontend (lo visible)
+## Fase 1 — Calentamiento de frontend (haz 1 o 2, no te quedes aquí)
 
-Todo en HTML/CSS/JS, en este mismo repo (`propiedash-practice`), y se publica en la web con
+Un calentamiento rápido para agarrar el flujo de git y deploy. Haz 1 o 2 y pásate a la Fase
+2. Todo en HTML/CSS/JS, en este mismo repo (`propiedash-practice`), y se publica en la web con
 GitHub Pages. Cada proyecto es un PR en tu carpeta `proyectos/tu-nombre/`. Cuando se fusiona
 a `main`, queda **en vivo** en `https://ndresca.github.io/propiedash-practice/...` (eso es un
 **deploy**, publicar en la web, como propiedash.com).
@@ -34,7 +37,7 @@ a `main`, queda **en vivo** en `https://ndresca.github.io/propiedash-practice/..
 
 ---
 
-## Fase 2 — El stack de verdad (con TUS cuentas gratis)
+## Fase 2 — El stack de verdad (LO IMPORTANTE, con TUS cuentas gratis)
 
 Aquí armas un **mini-Propiedash** con las mismas herramientas que usamos: Next.js, Vercel,
 Supabase, Resend. Todo en **tu propio repo** (crea uno nuevo, ej. `mi-propiedash`) y con
