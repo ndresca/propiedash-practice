@@ -44,6 +44,9 @@ Supabase, Resend. Todo en **tu propio repo** (crea uno nuevo, ej. `mi-propiedash
 **tus cuentas gratis**. Nada de esto toca Propiedash real.
 
 Tu guía te instala lo que falte (Node, etc.) y te abre las páginas para crear cada cuenta.
+El **paso a paso detallado de cada proyecto** (comandos exactos, dónde va cada llave, y los
+tropiezos a evitar) lo tiene tu guía en `referencia/FASE-2-STACK.md` del paquete de
+onboarding. Tú solo pídele "sigamos con el proyecto 7" y él te lleva.
 
 7. **Next.js: tu app de verdad.**
    - Con tu guía, crea una app con `create-next-app` (el framework de Propiedash) y pásate
